@@ -3,8 +3,8 @@
 Zdecydowałam się na udział w wyzwaniu Dare IT ponieważ posiadam doświadczenie w testach manualnych i chciałabym poszerzyć swoją wiedzę w zakresie testów automatyzujących.
 # Zadanie 2: Selektory.
 ### Remind password
-//*[@id="__next"]/form/div/div[1]/a
-//*[text()="Remind password"]
+* //*[@id="__next"]/form/div/div[1]/a
+*//*[text()="Remind password"]
 //*[contains(@class, "MuiTypography-root MuiLink")]  
 
 ### Login
