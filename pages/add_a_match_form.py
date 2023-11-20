@@ -18,6 +18,8 @@ class AddAmatchForm(BasePage):
     rating_xpath = "//*[@name='rating']"
     submit_button_xpath = "//*[@type= 'submit']"
     clear_button_xpath = "//*[text()='Clear']"
+    main_page_sidebar_xpath = "//*[text()='Main page' or text()='Strona główna']"
+    players_sidebar_xpath = "//*[text()='Players' or text()='Gracze']"
 
 
 pass
