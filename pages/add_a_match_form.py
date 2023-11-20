@@ -20,6 +20,11 @@ class AddAmatchForm(BasePage):
     clear_button_xpath = "//*[text()='Clear']"
     main_page_sidebar_xpath = "//*[text()='Main page' or text()='Strona główna']"
     players_sidebar_xpath = "//*[text()='Players' or text()='Gracze']"
+    testers_00_snizhana_sidebar_xpath = "//ul[2]/div[1]/div[2]/span"
+    matches_sidebar_xpath = "//ul[2]/div[2]/div[2]/span"
+    reports_sidebar_xpath = "//ul[2]/div[3]/div[2]/span"
+    change_language_xpath = "//*[text()='English' or text()='Polski']"
+    sign_out_xpath = "//*[text()='Sign out' or text()='Wyloguj']"
 
 
 pass

@@ -13,11 +13,11 @@ class Dashboard(BasePage):
     dev_team_contact_xpath = "//*[text()= 'Dev team contact']"
     add_player_xpath = "//*[text()='Add player' or text()='Dodaj gracza']"
     activity_xpath = "//*[text()='Activity' or text()='Aktywnosć']"
-    last_created_player_xpath = "//div[1]/main/div[3]/div[3]/div/div/h6[1]"
-    last_updated_player_xpath = "//div[1]/main/div[3]/div[3]/div/div/h6[2]"
-    last_created_match_xpath = "//div[1]/main/div[3]/div[3]/div/div/h6[3]"
-    last_updated_match_xpath = "//div[1]/main/div[3]/div[3]/div/div/h6[4]"
-    last_updated_report_xpath = "//div[1]/main/div[3]/div[3]/div/div/h6[5]"
+    last_created_player_xpath = "//div/div/h6[1]"
+    last_updated_player_xpath = "//div/div/h6[2]"
+    last_created_match_xpath = "//div/div/h6[3]"
+    last_updated_match_xpath = "//div/div/h6[4]"
+    last_updated_report_xpath = "//div/div/h6[5]"
 
 
 pass
