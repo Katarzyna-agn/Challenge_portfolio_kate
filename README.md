@@ -10,7 +10,7 @@ Zdecydowałam się na udział w wyzwaniu Dare IT ponieważ posiadam doświadczen
 1. Xpath=//div[1]/h5
 1. Xpath=//*[text()='Scouts Panel']
 1. Xpath=//*[contains(@class, 'MuiTypography-h5')]  
-2. 
+
 
 ### Login input
 
