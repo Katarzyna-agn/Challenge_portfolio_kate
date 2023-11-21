@@ -14,9 +14,7 @@ class Dashboard(BasePage):
         time.sleep(7)
         self.click_on_the_element(self.add_player_xpath)
 
-    #    def click_on_the_add_player(self):
-    time.sleep(7)
-        #assert self.get_page_title(self.login_url) == self.expected_title
+
 
     main_page_xpath = "//*[text()='Main page' or text()='Strona główna']"
     players_xpath = "//*[text()='Players' or text()='Gracze']"
