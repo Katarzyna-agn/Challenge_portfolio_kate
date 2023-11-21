@@ -19,6 +19,7 @@ class TestAddPlayer(unittest.TestCase):
         self.driver = webdriver.Chrome()
         self.driver.get('https://scouts-test.futbolkolektyw.pl/en')
         self.driver.fullscreen_window()
+        self.driver.maximize_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
     def test_add_player(self):
         user_login = LoginPage(self.driver)
