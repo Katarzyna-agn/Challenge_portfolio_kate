@@ -4,18 +4,6 @@ from pages.base_page import BasePage
 
 
 class Dashboard(BasePage):
-    expected_title = 'Scouts panel'
-    dashboard_url = 'https://scouts-test.futbolkolektyw.pl/en'
-    def title_of_page(self):
-        time.sleep(7)
-        assert self.get_page_title(self.dashboard_url) ==self.expected_title
-
-    def click_on_the_add_player(self):
-        time.sleep(7)
-        self.click_on_the_element(self.add_player_xpath)
-
-
-
     main_page_xpath = "//*[text()='Main page' or text()='Strona główna']"
     players_xpath = "//*[text()='Players' or text()='Gracze']"
     change_language_xpath = "//*[text()='English' or text()='Polski']"
@@ -32,6 +20,20 @@ class Dashboard(BasePage):
     last_created_match_xpath = "//div/div/h6[3]"
     last_updated_match_xpath = "//div/div/h6[4]"
     last_updated_report_xpath = "//div/div/h6[5]"
+    expected_title = 'Scouts panel'
+    dashboard_url = 'https://scouts-test.futbolkolektyw.pl/en'
+
+    def title_of_page(self):
+        time.sleep(7)
+        assert self.get_page_title(self.dashboard_url) ==self.expected_title
+
+    def click_on_the_add_player(self):
+        time.sleep(7)
+        self.click_on_the_element(self.add_player_xpath)
+
+
+
+
 
 
 pass

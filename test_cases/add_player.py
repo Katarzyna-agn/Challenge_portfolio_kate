@@ -39,6 +39,8 @@ class TestAddPlayer(unittest.TestCase):
         addplayer_page.type_in_weight('60')
         addplayer_page.type_in_height('180')
         addplayer_page.type_in_age('12.12.1990')
+        addplayer_page.click_on_the_leg_dd()
+        addplayer_page.click_on_the_right_leg()
         time.sleep(10)
 
 
