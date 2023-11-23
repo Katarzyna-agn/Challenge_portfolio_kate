@@ -1,4 +1,7 @@
 import time
+from lib2to3.pgen2 import driver
+
+from selenium.webdriver.support.wait import WebDriverWait
 
 from pages.base_page import BasePage
 
@@ -20,11 +23,13 @@ class Dashboard(BasePage):
     last_created_match_xpath = "//div/div/h6[3]"
     last_updated_match_xpath = "//div/div/h6[4]"
     last_updated_report_xpath = "//div/div/h6[5]"
+    futbol_kolektyw_logo_xpath = "//*[@title = 'Logo Scouts Panel']"
     expected_title = 'Scouts panel'
     dashboard_url = 'https://scouts-test.futbolkolektyw.pl/en'
+    wait = WebDriverWait(driver,10)
 
     def title_of_page(self):
-        time.sleep(7)
+        self.wait_for_element_to_be_clickable(self.futbol_kolektyw_logo_xpath)
         assert self.get_page_title(self.dashboard_url) ==self.expected_title
 
     def click_on_the_add_player(self):
