@@ -17,9 +17,10 @@ class TestLoginPage(unittest.TestCase):
         self.driver = webdriver.Chrome()
         self.driver.get('https://scouts-test.futbolkolektyw.pl/en')
         self.driver.fullscreen_window()
+        self.driver.maximize_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
-    def test_log_in_to_the_system(self):
+    def test_log_in_to_the_system_TC01(self):
         user_login = LoginPage(self.driver)
         user_login.title_of_page()
         user_login.check_page_header()
@@ -28,7 +29,6 @@ class TestLoginPage(unittest.TestCase):
         user_login.click_on_the_sign_in_button()
         dashboard_page=Dashboard(self.driver)
         dashboard_page.title_of_page()
-        #time.sleep(10)
 
 
     @classmethod

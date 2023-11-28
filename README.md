@@ -37,7 +37,7 @@ Zdecydowałam się na udział w wyzwaniu Dare IT ponieważ posiadam doświadczen
 1. Xpath=//*[@type='submit']
 
 ### Select_language
-1. Xpath=//*[@role = 'option']
-1. Xpath=//*[text()='English']
-1. Xpath=//*[text()='Polski']
+1. Xpath=//div[2]/div/div
+1. Xpath_english=//div[3]/ul/li[2]
+1. Xpath_polish=//div[3]/ul/li[1]
 
