@@ -22,8 +22,8 @@ class TestLoginPage(unittest.TestCase):
     def test_change_language_TC03(self):
         user_login = LoginPage(self.driver)
         user_login.title_of_page()
-        user_login.select_language("english")
-        user_login.select_language("polski")
+        user_login.change_language("english")
+        user_login.change_language("polski")
 
     @classmethod
     def tearDown(self):

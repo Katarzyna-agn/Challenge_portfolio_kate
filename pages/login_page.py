@@ -10,7 +10,8 @@ class LoginPage(BasePage):
     password_field_xpath = "//*[@id='password']"
     sign_in_button_xpath = "//*[@type='submit']"
     remaind_password_xpath = "//div[1]/a"
-    select_language_button_xpath = "//div[2]/div/div"
+    change_language_button_xpath = "//div[2]/div/div"
+    un_list_language_xpath = "//div[3]/ul"
     english_option_xpath = "//div[3]/ul/li[2]"
     polish_option_xpath = "//div[3]/ul/li[1]"
     login_url = 'https://scouts-test.futbolkolektyw.pl/en'
@@ -44,15 +45,16 @@ class LoginPage(BasePage):
         assert self.get_page_title(self.remaind_password_url) == self.expected_title_of_remaind_password
         time.sleep(3)
 
-    def select_language(self, language):
-        self.wait_for_element_to_be_clickable(self.select_language_button_xpath)
-        self.click_on_the_element(self.select_language_button_xpath)
+    def change_language(self, language):
+        self.click_on_the_element(self.change_language_button_xpath)
         if language =="english":
+            self.wait_for_visibility_of_element_located(self.un_list_language_xpath)
             self.click_on_the_element(self.english_option_xpath)
+
+
         else:
-            self.wait_for_element_to_be_clickable(self.polish_option_xpath)
             self.click_on_the_element(self.polish_option_xpath)
-            time.sleep(3)
+            self.wait_for_visibility_of_element_located(self.change_language_button_xpath)
 
 
 
