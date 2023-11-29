@@ -24,9 +24,9 @@ class LoginPage(BasePage):
 
     def type_in_email(self, email):
         self.field_send_keys(self.login_field_xpath, email)
-        time.sleep(3)
 
     def type_in_password(self,password):
+        #dodac wait_for_element_to _be clicable
         self.field_send_keys(self.password_field_xpath, password)
 
     def click_on_the_remaind_password(self):
