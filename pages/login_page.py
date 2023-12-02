@@ -16,8 +16,8 @@ class LoginPage(BasePage):
     polish_option_xpath = "//div[3]/ul/li[1]"
     login_url = 'https://scouts-test.futbolkolektyw.pl/en'
     expected_title = "Scouts panel - sign in"
-    header_of_box_xpath = "//div[1]/h5"
-    excepted_header_of_box = "Scouts Panel"
+    title_of_box_xpath = "//div[1]/h5"
+    expected_text_of_box = "Scouts Panel"
     remaind_password_url = 'https://scouts-test.futbolkolektyw.pl/en/remind'
     expected_title_of_remaind_password = "Remind password"
     wait = WebDriverWait(driver, 10)
@@ -25,8 +25,8 @@ class LoginPage(BasePage):
     def type_in_email(self, email):
         self.field_send_keys(self.login_field_xpath, email)
 
-    def type_in_password(self,password):
-        #dodac wait_for_element_to _be clicable
+    def type_in_password(self, password):
+        # dodac wait_for_element_to _be clicable
         self.field_send_keys(self.password_field_xpath, password)
 
     def click_on_the_remaind_password(self):
@@ -36,10 +36,10 @@ class LoginPage(BasePage):
         self.click_on_the_element(self.sign_in_button_xpath)
 
     def title_of_page(self):
-        assert self.get_page_title(self.login_url) == self.expected_title
+        assert self.get_page_title() == self.expected_title
 
-    def check_page_header(self):
-        self.assert_element_text(self.driver, self.header_of_box_xpath, self.excepted_header_of_box)
+    def check_page_text(self):
+        self.assert_element_text(self.driver, self.title_of_box_xpath, self.expected_text_of_box)
 
     def title_of_remaind_password(self):
         assert self.get_page_title(self.remaind_password_url) == self.expected_title_of_remaind_password
@@ -47,7 +47,7 @@ class LoginPage(BasePage):
 
     def change_language(self, language):
         self.click_on_the_element(self.change_language_button_xpath)
-        if language =="english":
+        if language == "english":
             self.wait_for_visibility_of_element_located(self.un_list_language_xpath)
             self.click_on_the_element(self.english_option_xpath)
 
@@ -55,7 +55,3 @@ class LoginPage(BasePage):
         else:
             self.click_on_the_element(self.polish_option_xpath)
             self.wait_for_visibility_of_element_located(self.change_language_button_xpath)
-
-
-
-

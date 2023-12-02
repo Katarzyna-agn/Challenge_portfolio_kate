@@ -26,7 +26,6 @@ class TestLoginPage(unittest.TestCase):
         user_login.click_on_the_remaind_password()
         user_login.title_of_remaind_password()
 
-
     @classmethod
     def tearDown(self):
         self.driver.quit()

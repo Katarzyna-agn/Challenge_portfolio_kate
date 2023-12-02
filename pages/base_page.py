@@ -19,11 +19,10 @@ class BasePage():
     def click_on_the_element(self, selector, selector_type=By.XPATH):
         return self.driver.find_element(selector_type, selector).click()
 
-    def get_page_title(self,url):
-        self.driver.get(url)
+    def get_page_title(self):
         return self.driver.title
 
-    def assert_element_text(self, driver, xpath, expected_text ):
+    def assert_element_text(self, driver, xpath, expected_text):
         """Comparing expected text with observed value from web element
 
             :param driver: webdriver instance
@@ -33,21 +32,22 @@ class BasePage():
         """
         element = driver.find_element(by=By.XPATH, value=xpath)
         element_text = element.text
-        assert expected_text  == element_text
+        assert expected_text == element_text
 
-    def wait_for_element_to_be_clickable(self, locator, locator_type= DEFAULT_LOCATOR_TYPE):
-        wait = WebDriverWait(self.driver,10)
+    def wait_for_element_to_be_clickable(self, locator, locator_type=DEFAULT_LOCATOR_TYPE):
+        wait = WebDriverWait(self.driver, 10)
         element = wait.until(EC.element_to_be_clickable((locator_type, locator)))
         time.sleep(3)
 
-    def wait_for_visibility_of_element_located(self, locator, locator_type= DEFAULT_LOCATOR_TYPE):
-        wait = WebDriverWait(self.driver,10)
+    def wait_for_visibility_of_element_located(self, locator, locator_type=DEFAULT_LOCATOR_TYPE):
+        wait = WebDriverWait(self.driver, 10)
         element = wait.until(EC.visibility_of_element_located((locator_type, locator)))
         time.sleep(3)
 
-    """
-    def wait_for_title_is(self, url):
+
+"""
+    def wait_for_title_is(self,url):
         wait = WebDriverWait(self.driver,10)
-        element = wait.until(EC.visibility_of_element_located((url)))
+        element = wait.until(EC.title_is((url)))
         time.sleep(3)
-    """
+"""

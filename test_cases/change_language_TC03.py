@@ -24,6 +24,7 @@ class TestLoginPage(unittest.TestCase):
         user_login.title_of_page()
         user_login.change_language("english")
         user_login.change_language("polski")
+        # dopisać sprawdzenie czy zmienił się język
 
     @classmethod
     def tearDown(self):

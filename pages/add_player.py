@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 
 from pages.base_page import BasePage
 
+
 class AddPlayer(BasePage):
     email_field_xpath = "//*[@name='email']"
     name_field_xpath = "//*[@name ='name']"
@@ -16,21 +17,23 @@ class AddPlayer(BasePage):
     un_list_of_legs_xpath = "//div[3]/ul"
     right_leg_xpath = "//div[3]/ul/li[1]"
     left_leg_xpath = "//div[3]/ul/li[2]"
-    club_xpath = "//div[9]/div/div/input"
-    level_xpath = "//div[10]/div/div/input"
-    main_position_xpath = "//div[11]/div/div/input"
-    second_position_xpath = "//div[12]/div/div/input"
+    club_xpath = "//*[@name = 'club']"
+    level_xpath = "//*[@name = 'level']"
+    main_position_xpath = "//*[@name='mainPosition']"
+    second_position_xpath = "//*[@name='secondPosition']"
     district_ddown_xpath = "//*[@id='mui-component-select-district']"
     un_list_of_districts_xpath = "//div[3]/ul"
     Masovia_district_xpath = "//ul/li[7]"
-    achievements_xpath = "//div[14]/div/div/input"
+    achievements_xpath = "//*[@name='achievements']"
     submit_button_xpath = "//*[@type ='submit']"
+    main_page_sidebar_xpath = "//*[text()='Main page']"
     expected_title = 'Add player'
     addplayer_url = 'https://scouts-test.futbolkolektyw.pl/en/players/add'
+    edit_player_url = 'https://scouts-test.futbolkolektyw.pl/en/players/add'
 
     def title_of_page(self):
-        assert self.get_page_title(self.addplayer_url) ==self.expected_title
-        time.sleep(5)
+        time.sleep(3)
+        assert self.get_page_title() == self.expected_title
 
     def type_in_email(self, email):
         self.field_send_keys(self.email_field_xpath, email)
@@ -53,7 +56,6 @@ class AddPlayer(BasePage):
     def type_in_age(self, age):
         self.field_send_keys(self.age_field_xpath, age)
 
-
     def select_leg(self, leg):
         self.click_on_the_element(self.leg_ddown_xpath)
         self.wait_for_visibility_of_element_located(self.un_list_of_legs_xpath)
@@ -63,7 +65,6 @@ class AddPlayer(BasePage):
 
         else:
             self.click_on_the_element(self.left_leg_xpath)
-
 
     def type_in_club(self, club):
         self.field_send_keys(self.club_xpath, club)
@@ -82,16 +83,15 @@ class AddPlayer(BasePage):
         self.wait_for_visibility_of_element_located(self.un_list_of_districts_xpath)
 
     def click_on_the_Masovia(self):
-        self.click_on_the_element(self.Masovia_district_xpath )
-
+        self.click_on_the_element(self.Masovia_district_xpath)
 
     def type_in_achievements(self, achievements):
         self.field_send_keys(self.achievements_xpath, achievements)
 
-
     def click_on_submit_button(self):
         self.click_on_the_element(self.submit_button_xpath)
-        time.sleep(10)#poprawić
 
-
-
+    def click_on_main_page(self):
+        self.wait_for_element_to_be_clickable(self.main_page_sidebar_xpath)
+        self.click_on_the_element(self.main_page_sidebar_xpath)
+        # time.sleep(10)#poprawić
