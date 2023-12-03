@@ -42,8 +42,9 @@ class LoginPage(BasePage):
         self.assert_element_text(self.driver, self.title_of_box_xpath, self.expected_text_of_box)
 
     def title_of_remaind_password(self):
-        assert self.get_page_title(self.remaind_password_url) == self.expected_title_of_remaind_password
-        time.sleep(3)
+        assert self.get_page_title() == self.expected_title_of_remaind_password
+        self.wait_for_page_title(self.expected_title_of_remaind_password)
+
 
     def change_language(self, language):
         self.click_on_the_element(self.change_language_button_xpath)

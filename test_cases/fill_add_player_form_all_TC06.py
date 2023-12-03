@@ -34,7 +34,7 @@ class TestAddPlayer(unittest.TestCase):
         addplayer_page.title_of_page()
         addplayer_page.type_in_email('John@getnada.com')
         addplayer_page.type_in_name('John')
-        addplayer_page.type_in_surname('Wan')
+        addplayer_page.type_in_surname('Bianco')
         addplayer_page.type_in_phone('487-247-743')
         addplayer_page.type_in_weight('80')
         addplayer_page.type_in_height('192')

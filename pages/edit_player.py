@@ -4,13 +4,13 @@ from pages.base_page import BasePage
 
 
 class EditPlayer(BasePage):
-    expected_title = 'Edit player John Wan'
-    expected_text_of_box = 'John Wan'
-    title_of_box_xpath = "//*[ text() = 'John Wan']"
+    expected_title = 'Edit player John Bianco'
+    expected_text_of_box = 'John Bianco'
+    title_of_box_xpath = "//ul[2]/div[1]/div[2]/span"
     editplayer_url = 'https://scouts-test.futbolkolektyw.pl/en/players/add'
 
     def title_of_page(self):
-        time.sleep(3)
+        self.wait_for_page_title(self.expected_title)
         assert self.get_page_title() == self.expected_title
 
     def check_page_text(self):

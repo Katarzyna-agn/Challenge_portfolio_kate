@@ -33,7 +33,7 @@ class TestAddPlayer(unittest.TestCase):
         addplayer_page = AddPlayer(self.driver)
         addplayer_page.title_of_page()
         addplayer_page.type_in_name('John')
-        addplayer_page.type_in_surname('Wan')
+        addplayer_page.type_in_surname('Bianco')
         addplayer_page.type_in_age('12.12.1992')
         addplayer_page.type_in_main_position('good player')
         addplayer_page.click_on_submit_button()

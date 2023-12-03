@@ -29,10 +29,10 @@ class AddPlayer(BasePage):
     main_page_sidebar_xpath = "//*[text()='Main page']"
     expected_title = 'Add player'
     addplayer_url = 'https://scouts-test.futbolkolektyw.pl/en/players/add'
-    edit_player_url = 'https://scouts-test.futbolkolektyw.pl/en/players/add'
+
 
     def title_of_page(self):
-        time.sleep(3)
+        self.wait_for_element_to_be_clickable(self.email_field_xpath)
         assert self.get_page_title() == self.expected_title
 
     def type_in_email(self, email):
@@ -94,4 +94,4 @@ class AddPlayer(BasePage):
     def click_on_main_page(self):
         self.wait_for_element_to_be_clickable(self.main_page_sidebar_xpath)
         self.click_on_the_element(self.main_page_sidebar_xpath)
-        # time.sleep(10)#poprawić
+

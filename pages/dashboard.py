@@ -32,7 +32,7 @@ class Dashboard(BasePage):
     def title_of_page(self):
         self.wait_for_element_to_be_clickable(self.futbol_kolektyw_logo_xpath)
         assert self.get_page_title() == self.expected_title
-        
+
 
     def click_on_the_add_player(self):
         self.click_on_the_element(self.add_player_xpath)
