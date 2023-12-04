@@ -44,13 +44,6 @@ class BasePage():
         element = wait.until(EC.visibility_of_element_located((locator_type, locator)))
         time.sleep(3)
 
-    def wait_for_edit_player_page_title(self):
-        wait = WebDriverWait(self.driver, 10)
-        element = wait.until(EC.title_contains('John Bianco'))
-        time.sleep(3)
 
-    def wait_for_page_title(self, title):
-        wait = WebDriverWait(self.driver, 10)
-        element = wait.until(EC.title_contains(title))
-        time.sleep(3)
+
 
