@@ -10,7 +10,7 @@ from pages.edit_player import EditPlayer
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 
-class TestAddPlayer(unittest.TestCase):
+class TestAddPlayer02(unittest.TestCase):
 
     @classmethod
     def setUp(self):

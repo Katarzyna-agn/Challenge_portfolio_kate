@@ -9,7 +9,7 @@ class LoginPage(BasePage):
     login_field_xpath = "//*[@id='login']"
     password_field_xpath = "//*[@id='password']"
     sign_in_button_xpath = "//*[@type='submit']"
-    remaind_password_xpath = "//div[1]/a"
+    remind_password_xpath = "//div[1]/a"
     change_language_button_xpath = "//div[2]/div/div"
     un_list_language_xpath = "//div[3]/ul"
     english_option_xpath = "//div[3]/ul/li[2]"
@@ -18,9 +18,11 @@ class LoginPage(BasePage):
     expected_title = "Scouts panel - sign in"
     title_of_box_xpath = "//div[1]/h5"
     expected_text_of_box = "Scouts Panel"
-    remaind_password_url = 'https://scouts-test.futbolkolektyw.pl/en/remind'
-    expected_title_of_remaind_password = "Remind password"
+    remind_password_url = 'https://scouts-test.futbolkolektyw.pl/en/remind'
+    remind_password_text_xpath = "//div[1]/h5"
+    expected_title_of_remind_password = "Remind password"
     wait = WebDriverWait(driver, 10)
+
 
     def type_in_email(self, email):
         self.field_send_keys(self.login_field_xpath, email)
@@ -29,8 +31,8 @@ class LoginPage(BasePage):
         # dodac wait_for_element_to _be clicable
         self.field_send_keys(self.password_field_xpath, password)
 
-    def click_on_the_remaind_password(self):
-        self.click_on_the_element(self.remaind_password_xpath)
+    def click_on_the_remind_password(self):
+        self.click_on_the_element(self.remind_password_xpath)
 
     def click_on_the_sign_in_button(self):
         self.click_on_the_element(self.sign_in_button_xpath)
@@ -41,9 +43,9 @@ class LoginPage(BasePage):
     def check_page_text(self):
         self.assert_element_text(self.driver, self.title_of_box_xpath, self.expected_text_of_box)
 
-    def title_of_remaind_password(self):
-        assert self.get_page_title() == self.expected_title_of_remaind_password
-        self.wait_for_page_title(self.expected_title_of_remaind_password)
+    def title_of_remind_password(self):
+        assert self.get_page_title() == self.expected_title_of_remind_password
+        self.wait_for_visibility_of_element_located(self.remind_password_text_xpath )
 
 
     def change_language(self, language):
