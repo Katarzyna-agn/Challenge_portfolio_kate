@@ -48,7 +48,7 @@ https://drive.google.com/drive/folders/1A764FigOH3JaDqWqSrRBsWpVjxVN5a6-?usp=dri
 
 ### Zadanie 5:
 Link do drugiego repozytorium
-https://github.com/Katarzyna-agn/challenge_portfolio_kate_robotframework
+https://github.com/Katarzyna-agn/Challenge_portfolio_kate2_robotframework
 
 
 
