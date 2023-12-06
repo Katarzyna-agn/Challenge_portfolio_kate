@@ -6,6 +6,7 @@ from pages.base_page import BasePage
 
 
 class AddPlayer(BasePage):
+    main_page_xpath = "//ul[1]/div[1]/div[2]/span"
     email_field_xpath = "//*[@name='email']"
     name_field_xpath = "//*[@name ='name']"
     surname_field_xpath = "//*[@name ='surname']"
@@ -32,7 +33,7 @@ class AddPlayer(BasePage):
 
 
     def title_of_page(self):
-        self.wait_for_element_to_be_clickable(self.email_field_xpath)
+        self.wait_for_visibility_of_element_located(self.main_page_xpath)
         assert self.get_page_title() == self.expected_title
 
     def type_in_email(self, email):

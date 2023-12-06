@@ -29,7 +29,6 @@ class LoginPage(BasePage):
         self.field_send_keys(self.login_field_xpath, email)
 
     def type_in_password(self, password):
-        # dodac wait_for_element_to _be clicable
         self.field_send_keys(self.password_field_xpath, password)
 
     def click_on_the_remind_password(self):
