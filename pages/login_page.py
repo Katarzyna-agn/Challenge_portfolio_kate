@@ -18,6 +18,7 @@ class LoginPage(BasePage):
     expected_title = "Scouts panel - sign in"
     title_of_box_xpath = "//div[1]/h5"
     expected_text_of_box = "Scouts Panel"
+    expected_text_of_przyphaslo = "Przypomnij hasło"
     remind_password_url = 'https://scouts-test.futbolkolektyw.pl/en/remind'
     remind_password_text_xpath = "//div[1]/h5"
     expected_title_of_remind_password = "Remind password"
@@ -42,6 +43,9 @@ class LoginPage(BasePage):
 
     def check_page_text(self):
         self.assert_element_text(self.driver, self.title_of_box_xpath, self.expected_text_of_box)
+
+    def check_page_text_pl(self):
+        self.assert_element_text(self.driver, self.remind_password_xpath, self.expected_text_of_przyphaslo)
 
     def title_of_remind_password(self):
         assert self.get_page_title() == self.expected_title_of_remind_password
