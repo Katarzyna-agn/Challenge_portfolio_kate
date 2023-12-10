@@ -1,9 +1,6 @@
 import os
-import time
 import unittest
 from selenium import webdriver
-from pages.base_page import BasePage
-from pages.dashboard import Dashboard
 from pages.login_page import LoginPage
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
@@ -19,7 +16,7 @@ class TestLoginPage02(unittest.TestCase):
         self.driver.maximize_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
-    def test_remaind_password_TC02(self):
+    def test_remind_password_TC02(self):
         user_login = LoginPage(self.driver)
         user_login.title_of_page()
         user_login.type_in_email('user01@getnada.com')
