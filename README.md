@@ -54,13 +54,20 @@ Zdecydowałam się na udział w wyzwaniu Dare IT ponieważ posiadam doświadczen
 
 # Task 3:
 
-* Testing of Login and Add Player Page:
-
-  * Finding selectors, clicking on elements, filling fields, assert title, assert element
+* Finding selectors for other pages, clicking on elements, filling fields, assert title, assert element
 
 # Task 4:
-Link do dysku google drive
-https://drive.google.com/drive/folders/1A764FigOH3JaDqWqSrRBsWpVjxVN5a6-?usp=drive_link
+
+* Debuger
+
+* Explicitly_wait
+  
+* Test Cases
+
+* Creating automation test based on test cases
+
+* if else statement
+  
 
 
 
