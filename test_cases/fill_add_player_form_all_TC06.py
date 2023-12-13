@@ -14,7 +14,7 @@ class TestAddPlayer02(unittest.TestCase):
     def setUp(self):
         os.chmod(DRIVER_PATH, 755)
         self.driver = webdriver.Chrome()
-        self.driver.get('https://scouts-test.futbolkolektyw.pl/en')
+        self.driver.get('https://dareit.futbolkolektyw.pl/en')
         self.driver.fullscreen_window()
         self.driver.maximize_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
@@ -45,6 +45,9 @@ class TestAddPlayer02(unittest.TestCase):
         addplayer_page.click_on_the_district_dd()
         addplayer_page.click_on_the_Masovia()
         addplayer_page.type_in_achievements('Winner')
+        addplayer_page.type_in_laczynaspilka('Yes')
+        addplayer_page.type_in_90minut('Yes')
+        addplayer_page.type_in_facebook('https://pl-pl.facebook.com/')
         addplayer_page.click_on_submit_button()
         editplayer_page = EditPlayer(self.driver)
         editplayer_page.title_of_page()

@@ -14,7 +14,7 @@ class LoginPage(BasePage):
     un_list_language_xpath = "//div[3]/ul"
     english_option_xpath = "//div[3]/ul/li[2]"
     polish_option_xpath = "//div[3]/ul/li[1]"
-    login_url = 'https://scouts-test.futbolkolektyw.pl/en'
+    login_url = 'https://dareit.futbolkolektyw.pl/en'
     expected_title = "Scouts panel - sign in"
     title_of_box_xpath = "//div[1]/h5"
     expected_text_of_box = "Scouts Panel"

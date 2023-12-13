@@ -26,7 +26,7 @@ class Dashboard(BasePage):
     last_added_player_xpath = "//div[3]/div/div/a[1]/button/span[1]"
     futbol_kolektyw_logo_xpath = "//*[@title = 'Logo Scouts Panel']"
     expected_title = 'Scouts panel'
-    dashboard_url = 'https://scouts-test.futbolkolektyw.pl/en'
+    dashboard_url = 'https://dareit.futbolkolektyw.pl/en'
     wait = WebDriverWait(driver, 10)
 
     def title_of_page(self):

@@ -26,6 +26,9 @@ class AddPlayer(BasePage):
     un_list_of_districts_xpath = "//div[3]/ul"
     Masovia_district_xpath = "//ul/li[7]"
     achievements_xpath = "//*[@name='achievements']"
+    laczynaspilka_xpath  = "//*[@name= 'webLaczy']"
+    minut_xpath = "//*[@name= 'web90']"
+    facebook_xpath = "//*[@name = 'webFB']"
     submit_button_xpath = "//*[@type ='submit']"
     main_page_sidebar_xpath = "//*[text()='Main page']"
     expected_title = 'Add player'
@@ -78,6 +81,15 @@ class AddPlayer(BasePage):
 
     def type_in_second_position(self, position):
         self.field_send_keys(self.second_position_xpath, position)
+
+    def type_in_laczynaspilka(self, laczynaspilka):
+        self.field_send_keys(self.laczynaspilka_xpath, laczynaspilka)
+
+    def type_in_90minut(self, minut):
+        self.field_send_keys(self.minut_xpath, minut)
+
+    def type_in_facebook(self, link):
+        self.field_send_keys(self.facebook_xpath, link)
 
     def click_on_the_district_dd(self):
         self.click_on_the_element(self.district_ddown_xpath)
