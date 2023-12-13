@@ -1,9 +1,14 @@
-# Zadanie 1: Konfiguracja oprogramowania.
+# Task 1: Software configuration:
+
+* Python
+* IDE PyCharm Community
+* GitHub Desktop
+  
 ## Podzadanie 1: Dlaczego zdecydowałam się wziąć udział w wyzwaniu Dare IT Challenge?
 
 Zdecydowałam się na udział w wyzwaniu Dare IT ponieważ posiadam doświadczenie w testach manualnych i chciałabym poszerzyć swoją wiedzę w zakresie testów automatyzujących. 
 
-# Zadanie 2: Selektory.
+# Task 2: Selectors
 
 ## Login Page
 ### Scouts Panel
