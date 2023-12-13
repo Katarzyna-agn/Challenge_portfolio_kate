@@ -10,7 +10,15 @@ Zdecydowałam się na udział w wyzwaniu Dare IT ponieważ posiadam doświadczen
 
 # Task 2: Selectors
 
-## Login Page
+* Finding selectors on the Login Page
+
+* Good practices for selecting selectors
+
+* Adding selectors to the project
+
+* Creating a new branch
+
+## Login Page selectors
 ### Scouts Panel
 1. Xpath=//div[1]/h5
 1. Xpath=//*[text()='Scouts Panel']
@@ -23,13 +31,11 @@ Zdecydowałam się na udział w wyzwaniu Dare IT ponieważ posiadam doświadczen
 1. Xpath=//*[@name='login']
 1. Xpath=//*[@type='text']
 
-
 ### Password input
 
 1. Xpath=//*[@id='password']
 1. Xpath=//*[@name='password']
 1. Xpath=//*[@type='password']
-
 
 ### Remaind_password
 1. Xpath=//div[1]/a
@@ -46,14 +52,17 @@ Zdecydowałam się na udział w wyzwaniu Dare IT ponieważ posiadam doświadczen
 1. Xpath_english=//div[3]/ul/li[2]
 1. Xpath_polish=//div[3]/ul/li[1]
 
+### Task 3:
 
-### Zadanie 4:
+### Task 4:
 Link do dysku google drive
 https://drive.google.com/drive/folders/1A764FigOH3JaDqWqSrRBsWpVjxVN5a6-?usp=drive_link
 
-### Zadanie 5:
+### Task 5:
 Link do drugiego repozytorium
 https://github.com/Katarzyna-agn/Challenge_portfolio_kate2_robotframework
+
+### Task 6:
 
 
 
