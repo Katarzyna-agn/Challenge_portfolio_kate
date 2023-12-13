@@ -52,21 +52,21 @@ Zdecydowałam się na udział w wyzwaniu Dare IT ponieważ posiadam doświadczen
 1. Xpath_english=//div[3]/ul/li[2]
 1. Xpath_polish=//div[3]/ul/li[1]
 
-### Task 3:
+# Task 3:
 
 * Testing of Login and Add Player Page:
 
 Finding selectors, clicking on elements, filling fields, assert title, assert element
 
-### Task 4:
+# Task 4:
 Link do dysku google drive
 https://drive.google.com/drive/folders/1A764FigOH3JaDqWqSrRBsWpVjxVN5a6-?usp=drive_link
 
-### Task 5:
+# Task 5:
 Link do drugiego repozytorium
 https://github.com/Katarzyna-agn/Challenge_portfolio_kate2_robotframework
 
-### Task 6:
+# Task 6:
 
 
 
