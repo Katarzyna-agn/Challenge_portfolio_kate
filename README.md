@@ -10,9 +10,9 @@ Zdecydowałam się na udział w wyzwaniu Dare IT ponieważ posiadam doświadczen
 
 # Task 2: Selectors
 
-* Finding selectors on the Login Page
-
 * Good practices for selecting selectors
+
+* Finding selectors on the Login Page
 
 * Adding selectors to the project
 
@@ -53,6 +53,10 @@ Zdecydowałam się na udział w wyzwaniu Dare IT ponieważ posiadam doświadczen
 1. Xpath_polish=//div[3]/ul/li[1]
 
 ### Task 3:
+
+* Testing of Login and Add Player Page:
+
+Finding selectors, clicking on elements, filling fields, assert title, assert element
 
 ### Task 4:
 Link do dysku google drive
