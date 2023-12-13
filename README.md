@@ -56,17 +56,13 @@ Zdecydowałam się na udział w wyzwaniu Dare IT ponieważ posiadam doświadczen
 
 * Testing of Login and Add Player Page:
 
-Finding selectors, clicking on elements, filling fields, assert title, assert element
+* * Finding selectors, clicking on elements, filling fields, assert title, assert element
 
 # Task 4:
 Link do dysku google drive
 https://drive.google.com/drive/folders/1A764FigOH3JaDqWqSrRBsWpVjxVN5a6-?usp=drive_link
 
-# Task 5:
-Link do drugiego repozytorium
-https://github.com/Katarzyna-agn/Challenge_portfolio_kate2_robotframework
 
-# Task 6:
 
 
 
