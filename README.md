@@ -71,19 +71,18 @@ Zdecydowałam się na udział w wyzwaniu Dare IT ponieważ posiadam doświadczen
 * if else statement
 
 # Task 5: 
+* Test automation with Robot framework
+* Test report with Robort framework
+
+# Task 6:
+* Bugs report
+  * My bugs report example [Bugs Report](https://docs.google.com/spreadsheets/d/1Oze6tGCIenr0qwyVzywTphXJ2BXUburgRhCzhvWZEAI/edit#gid=0)
+* Tests Report
+  * My tests report expamle [Tests Report](https://docs.google.com/spreadsheets/d/1isxMvwEju7-1jEfOB7K2e_VjdbEE2ge56YbKKylxmy8/edit?usp=drive_link).
 
 
 
-  
 
-## My bugs report example
-
-* [Bug Reports](https://docs.google.com/spreadsheets/d/1Oze6tGCIenr0qwyVzywTphXJ2BXUburgRhCzhvWZEAI/edit#gid=0)
-
-
-## My tests report example 
-
-* [Tests Report](https://docs.google.com/spreadsheets/d/1isxMvwEju7-1jEfOB7K2e_VjdbEE2ge56YbKKylxmy8/edit?usp=drive_link)
   
 
 
