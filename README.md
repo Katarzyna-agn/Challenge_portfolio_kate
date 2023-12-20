@@ -78,7 +78,7 @@ Zdecydowałam się na udział w wyzwaniu Dare IT ponieważ posiadam doświadczen
 * Bugs report
   * My bugs report example [Bugs Report](https://docs.google.com/spreadsheets/d/1Oze6tGCIenr0qwyVzywTphXJ2BXUburgRhCzhvWZEAI/edit#gid=0)
 * Tests Report
-  * My tests report expamle [Tests Report](https://docs.google.com/spreadsheets/d/1isxMvwEju7-1jEfOB7K2e_VjdbEE2ge56YbKKylxmy8/edit?usp=drive_link).
+  * My tests report expamle [Tests Report](https://docs.google.com/spreadsheets/d/1isxMvwEju7-1jEfOB7K2e_VjdbEE2ge56YbKKylxmy8/edit?usp=drive_link)
 
 
 
