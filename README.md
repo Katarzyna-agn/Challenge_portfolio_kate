@@ -54,7 +54,8 @@ Zdecydowałam się na udział w wyzwaniu Dare IT ponieważ posiadam doświadczen
 
 # Task 3:
 
-* Finding selectors for other pages, clicking on elements, filling fields, assert title, assert element
+* Finding selectors for other pages
+* Test automation: clicking on elements, filling fields, assert title, assert element
 
 # Task 4:
 
@@ -63,10 +64,26 @@ Zdecydowałam się na udział w wyzwaniu Dare IT ponieważ posiadam doświadczen
 * Explicitly_wait
   
 * Test Cases
+  * My test cases example [Test Cases](https://docs.google.com/spreadsheets/d/1OFYKQWfsM3eru0KxDEgOtwP7QvAVzzhZoE_htZx1oVE/edit#gid=383163130)
 
 * Creating automation test based on test cases
 
 * if else statement
+
+# Task 5: 
+
+
+
+  
+
+## My bugs report example
+
+* [Bug Reports](https://docs.google.com/spreadsheets/d/1Oze6tGCIenr0qwyVzywTphXJ2BXUburgRhCzhvWZEAI/edit#gid=0)
+
+
+## My tests report example 
+
+* [Tests Report](https://docs.google.com/spreadsheets/d/1isxMvwEju7-1jEfOB7K2e_VjdbEE2ge56YbKKylxmy8/edit?usp=drive_link)
   
 
 
