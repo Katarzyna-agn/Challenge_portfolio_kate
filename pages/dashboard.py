@@ -28,7 +28,7 @@ class Dashboard(BasePage):
     expected_title = 'Scouts panel'
     title_of_box_xpath = "//div[2]/h2"
     expected_text_of_box = "Scouts Panel"
-    dashboard_url = 'https://scouts-test.futbolkolektyw.pl/en'
+    dashboard_url = 'https://dareit.futbolkolektyw.pl/en'
     wait = WebDriverWait(driver, 10)
 
     def title_of_page(self):
