@@ -26,7 +26,9 @@ class Dashboard(BasePage):
     last_added_player_xpath = "//div[3]/div/div/a[1]/button/span[1]"
     futbol_kolektyw_logo_xpath = "//*[@title = 'Logo Scouts Panel']"
     expected_title = 'Scouts panel'
-    dashboard_url = 'https://dareit.futbolkolektyw.pl/en'
+    title_of_box_xpath = "//div[2]/h2"
+    expected_text_of_box = "Scouts Panel"
+    dashboard_url = 'https://scouts-test.futbolkolektyw.pl/en'
     wait = WebDriverWait(driver, 10)
 
     def title_of_page(self):
@@ -36,6 +38,9 @@ class Dashboard(BasePage):
 
     def click_on_the_add_player(self):
         self.click_on_the_element(self.add_player_xpath)
+
+    def check_page_text(self):
+        self.assert_element_text(self.driver, self.title_of_box_xpath, self.expected_text_of_box)
 
 
 pass

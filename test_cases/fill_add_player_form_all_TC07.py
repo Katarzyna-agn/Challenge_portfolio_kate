@@ -8,7 +8,7 @@ from pages.edit_player import EditPlayer
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 
-class TestAddPlayer02(unittest.TestCase):
+class TestAddPlayer01(unittest.TestCase):
 
     @classmethod
     def setUp(self):
@@ -19,7 +19,7 @@ class TestAddPlayer02(unittest.TestCase):
         self.driver.maximize_window()
         self.driver.implicitly_wait(IMPLICITLY_WAIT)
 
-    def test_fill_add_player_form_all_TC06(self):
+    def test_fill_add_player_form_all_TC07(self):
         user_login = LoginPage(self.driver)
         user_login.title_of_page()
         user_login.type_in_email('user01@getnada.com')
