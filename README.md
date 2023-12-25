@@ -55,7 +55,7 @@ Zdecydowałam się na udział w wyzwaniu Dare IT ponieważ posiadam doświadczen
 # Task 3:
 
 * Finding selectors for the other pages
-* Test automation: clicking on elements, filling fields, assert title, assert element
+* Test automation: clicking on elements, filling fields, assert instruction
 
 # Task 4:
 
