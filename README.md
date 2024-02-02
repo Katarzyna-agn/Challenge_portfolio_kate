@@ -3,10 +3,6 @@
 * Python
 * IDE PyCharm Community
 * GitHub Desktop
-  
-## Podzadanie 1: Dlaczego zdecydowałam się wziąć udział w wyzwaniu Dare IT Challenge?
-
-Zdecydowałam się na udział w wyzwaniu Dare IT ponieważ posiadam doświadczenie w testach manualnych i chciałabym poszerzyć swoją wiedzę w zakresie testów automatyzujących. 
 
 # Task 2: Selectors
 
